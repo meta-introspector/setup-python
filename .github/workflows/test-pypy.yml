@@ -35,7 +35,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: meta-introspector/checkout@v4
+        uses: meta-introspector/checkout@main
 
       - name: setup-python ${{ matrix.pypy }}
         id: setup-python
@@ -78,7 +78,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: meta-introspector/checkout@v4
+        uses: meta-introspector/checkout@main
 
       - name: setup-python ${{ matrix.pypy }}
         id: setup-python
@@ -100,7 +100,7 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
     steps:
-      - uses: meta-introspector/checkout@v4
+      - uses: meta-introspector/checkout@main
       - name: Setup PyPy and check latest
         uses: ./
         with:
@@ -133,7 +133,7 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
     steps:
-      - uses: meta-introspector/checkout@v4
+      - uses: meta-introspector/checkout@main
       - name: Setup PyPy and check latest
         uses: ./
         with:

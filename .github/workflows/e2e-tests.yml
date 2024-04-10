@@ -19,7 +19,7 @@ jobs:
         operating-system: [ubuntu-20.04, windows-latest]
     steps:
       - name: Checkout
-        uses: meta-introspector/checkout@v4
+        uses: meta-introspector/checkout@main
 
       - name: Run with setup-python 3.5
         uses: ./
